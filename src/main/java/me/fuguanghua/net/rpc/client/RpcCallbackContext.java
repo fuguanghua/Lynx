@@ -1,13 +1,5 @@
-//-------------------------------------------------
-// Litchi Game Server Framework
-// Copyright(c) 2019 phantaci <phantacix@qq.com>
-// MIT Licensed
-//-------------------------------------------------
 package me.fuguanghua.net.rpc.client;
 
-/**
- * @author 0x737263
- */
 public class RpcCallbackContext {
 
     public int threadId;

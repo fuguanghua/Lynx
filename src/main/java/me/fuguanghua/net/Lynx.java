@@ -87,9 +87,9 @@ public class Lynx {
         if (this.rootConfigPath == null || this.envDir == null || this.envName == null || this.nodeId == null) {
             StringBuilder sb = new StringBuilder();
             sb.append("lynx VM options config error...\n");
-            sb.append("-Dlynx.config      \t 配置文件相对根路径.  eg. -Dlitchi.config=config \n");
-            sb.append("-Dlynx.env         \t运行环境名称.  eg. -Dlitchi.env=local \n");
-            sb.append("-Dlynx.nodeid      \t当前服务器的结点id.  eg. -Dlitchi.nodeid=gate-1 \n");
+            sb.append("-Dlynx.config      \t 配置文件相对根路径.  eg. -Dlynx.config=config \n");
+            sb.append("-Dlynx.env         \t运行环境名称.  eg. -Dlynx.env=local \n");
+            sb.append("-Dlynx.nodeid      \t当前服务器的结点id.  eg. -Dlynx.nodeid=gate-1 \n");
             throw new Exception(sb.toString());
         }
 

@@ -22,23 +22,6 @@ public class HeartbeatHandler extends BaseChannelHandler<HeartbeatPacket> {
         super(HeartbeatPacket.class);
     }
 
-//    /**
-//     * use by client
-//     * @param litchi
-//     * @param client
-//     */
-//    public HeartbeatHandler(litchi litchi, NettyRpcClient client) {
-//        super(HeartbeatPacket.class);
-//        this.litchi = litchi;
-//        this.client = client;
-//
-//        litchi.schedule().addEverySecond(() -> {
-//            if (client.isConnect()) {
-//                HeartbeatPacket packet = new HeartbeatPacket(litchi.currentNode().getNodeType(), litchi.currentNode().getNodeId());
-//                client.writeRpcPacket(packet);
-//            }
-//        }, 30);
-//    }
 
     @Override
     protected void onChannelRead(ChannelHandlerContext ctx, HeartbeatPacket packet) {

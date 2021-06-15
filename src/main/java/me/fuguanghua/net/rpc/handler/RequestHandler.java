@@ -12,9 +12,9 @@ public class RequestHandler extends BaseChannelHandler<RequestPacket> {
 
     private Lynx lynx;
 
-    public RequestHandler(Lynx litchi) {
+    public RequestHandler(Lynx lynx) {
         super(RequestPacket.class);
-        this.lynx = litchi;
+        this.lynx = lynx;
     }
 
     @Override
