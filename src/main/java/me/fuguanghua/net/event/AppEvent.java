@@ -36,7 +36,7 @@ public abstract class AppEvent implements Cloneable {
 
     @Override
     public String toString() {
-        return "GameEvent [name=" + name + ", UniqueId=" + dispatchHash() + "]";
+        return "Event [name=" + name + ", UniqueId=" + dispatchHash() + "]";
     }
 
     public Object clone() throws CloneNotSupportedException {

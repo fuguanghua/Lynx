@@ -21,7 +21,7 @@ public class AppEventHandler extends BaseChannelHandler<AppEvent> {
     @Override
     protected void onChannelRead(ChannelHandlerContext ctx, AppEvent packet) {
         if(LOGGER.isDebugEnabled()) {
-            LOGGER.info("<---------- GameEvent  {}", packet);
+            LOGGER.info("<---------- Event  {}", packet);
         }
         lynx.event().post(packet);
     }

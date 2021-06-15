@@ -228,7 +228,7 @@ public class Lynx {
     }
 
     public EventComponent event() {
-        return getComponent((Class<? extends Component>) EventComponent.class);
+        return getComponent(EventComponent.class);
     }
 
     public GateSessionService sessionService() {
